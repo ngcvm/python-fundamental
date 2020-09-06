@@ -2,4 +2,4 @@
 # author: packkkk
 
 celcius = float(input('Input Celcius (°C): '))
-print('{} (°C) = {} (°F)'.format(celcius, (9/5)*celcius+32))
+print('%.2f (°C) = %.2f (°F)'%(celcius, (9/5)*celcius+32))
