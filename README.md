@@ -1,1 +1,2 @@
-# python-fundamental
+# Python-fundamental excercises
+## author: @packkkk
