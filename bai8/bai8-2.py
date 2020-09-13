@@ -2,20 +2,10 @@
 # Bai 5.2
 @author: packkkk
 '''
+from bai8_modules import cal_bmi, eval_bmi
 
-def cal_bmi(height, weight):
-    return weight / (height * height)
-
-def eval_bmi(bmi):
-    if bmi < 18.5:
-        return 'Too thin!!!'
-    elif bmi < 25:
-        return 'Normal'
-    else:
-        return 'Too fat!!!'
-
-height = float(input('Input height (kg): '))
-weight = float(input('Input weight (m): '))
+height = float(input('Input height (m): '))
+weight = float(input('Input weight (kg): '))
 
 bmi = cal_bmi(height, weight)
 print ('BMI: ', bmi)
