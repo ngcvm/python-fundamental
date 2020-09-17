@@ -13,4 +13,4 @@ print ('List prime numbers: ', list(filter(lambda x: is_prime_number(x), my_list
 print ('Negatives: ', list(filter(lambda x: x < 0, my_list)))
 print ('Positives: ', list(filter(lambda x: x > 0, my_list)))
 my_x = int(input('Input x: '))
-print ('List numbers larger than x: ', list(filter(lambda x: x > my_x, my_list)))
+print ('List numbers larger than x: ', list(filter(lambda x: x > my_x, my_list)))   

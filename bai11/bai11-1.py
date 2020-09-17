@@ -6,13 +6,13 @@ Bai 11-1
 # Code goes here
 
 import os
+from bai11modules import read_file
 
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 try:
     name = input('Input filename: ')
-    file = open(os.path.join(CURRENT_DIR, name), 'r')
-    content = file.read()
+    content = read_file(name)
     print('File content: \n', content)
-    file.close()
 except EOFError as error:
     print('Error: ', error)
+except Exception as error:
+    print (error)

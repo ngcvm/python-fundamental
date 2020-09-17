@@ -5,21 +5,11 @@ Bai 11-2
 
 # Code goes here
 
-from bai11modules import read_report_file, check_file_exists
+from bai11modules import write_file
 
 try:
     filename = input('Input filename: ')
-    flag = 1
-    while flag == 1:
-        flag = int(input('0 (Any key). Exit, 1: Input file content: '))
-        if (flag == 1):
-            with open (filename, "w") as f:
-                f.write (input ('Input content: '))
-                f.close()
-        else:
-            read_report_file(filename)
-            print('Exit!!!')
-            break
-
-except EOFError as error:
+    content = input('Input file content: ')
+    write_file(filename, content)
+except Exception as error:
     print('Error: ', error)

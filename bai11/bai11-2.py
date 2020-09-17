@@ -4,16 +4,12 @@ Bai 11-1
 '''
 
 # Code goes here
-import os
-from bai11modules import read_report_file, check_file_exists
-CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+from bai11modules import read_report_file, read_file
 
 try:
     filename = input('Input filename: ')
-    file = open(os.path.join(CURRENT_DIR, filename), 'r')
-    content = file.read()
+    content = read_file(filename)
     read_report_file(filename)
-    file.close()
-except EOFError as error:
+except Exception as error:
     print('Error: ', error)
     
